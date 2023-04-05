@@ -1,99 +1,67 @@
 html, body {
-    margin: 0;
-    height: 100%;
+    background-color: rgb(129, 161, 189);
 }
+
 .flexbox-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    /* border: 3px solid yellow; */
 }
 
-.header {
-    background-color: aquamarine;
-    border: 3px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flexbox-row {
+    /* border: 3px solid red; */
 }
 
-.intro-panel {
-    background-color: lightcoral;
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
+.content {
+    /* border: 3px solid blue; */
 }
 
-.intro-panel-text {
-    background-color: rgb(99, 7, 7);
-    border: 3px solid rgb(91, 43, 153);
-    flex-grow: 1;
+.card {
+    border: 3px solid purple;
+    height: 200px;
+    width: 150px;
 }
 
-.intro-panel-image {
-    background-color: rgb(131, 38, 38);
-    border: 3px solid rgb(14, 143, 36);
-    flex-grow: 1;
+.flexbox-row.header{
+    background-color: aqua;
 }
-
-.information-panel {
+.flexbox-row.intro-section {
+    background-color: bisque;
+}
+.flexbox-row.information-section {
+    background-color: chocolate;
+}
+.flexbox-row.quotation-section {
     background-color: azure;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
 }
-
-.quotation-panel {
-    background-color: grey;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
+.flexbox-row.signup-section {
+    background-color: aquamarine;
 }
-
-.sign-up-panel {
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.footer {
-    background-color: darkcyan;
-    display: flex;
-    justify-content: space-between;
+.flexbox-row.footer {
+    background-color: lightsalmon;
 }
 
 
-.flex-box-item {
-    width: 100%;
-    display: flex;
-    /* border: 3px solid black; */
-}
-
-.left-item {
-    padding-left: 10%;
-}
-.right-item {
-    padding-right: 10%;
-    /* border: 3px solid green; */
-}
-
-.logo {
+#logo {
     border-radius: 50%;
-    width: 50px;
-    height: auto;
-}
-.links ul{
-    display: flex;
-    /* border: 2px solid orange; */
-    list-style-type: none;
+    height: 50px;
+    width: auto;
+    padding: 5px;
 }
 
-.links a {
+ul a{
     text-decoration: none;
     color: black;
-    padding-left: 10px; /*TODO I think this is an ugly fix?*/
 }
 
+.header .content #logo {
+    /* border: 3px solid red; */
+}
+
+
+.intro-section .content .text-box,.image-box {
+    /* border: 3px solid red; */
+}
+
+.content .image-box {
+    width: 200px;
+    height: 120px;
+}

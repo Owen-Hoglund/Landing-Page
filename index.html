@@ -4,45 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Landing</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="structures.css">
 </head>
 <body>
     <div class="flexbox-container">
-        <div class="flex-box-item header ">
-            <div class="left-item">
-                <img class="logo" src="./images/moose_face.jpeg" alt="A picture of me making a silly face">
+        <div class="flexbox-row header">
+            <div class="content">
+                <img id="logo" src="./images/moose_face.jpeg" alt="Me making a silly face">
+                <ul class="header-links">
+                    <a href="TODO">link-1</a>
+                    <a href="TODO">link-2</a>
+                    <a href="TODO">link-3</a>
+                </ul>
             </div>
-            <div class="right-item">
-                <div class="links">
-                    <ul>
-                        <li><a href="TODO">link 1</a></li>
-                        <li><a href="TODO">link 2</a></li>
-                        <li><a href="TODO">link 3</a></li>
-                        <li><a href="TODO">link 4</a></li>
-                    </ul>
+        </div>
+        <div class="flexbox-row intro-section">
+            <div class="content">
+                <div class="text-box">
+                    <p>BOLD TEXT</p>
+                    <p>smaller text</p>
+                    <button>Sign Up</button>
+                </div>
+                <img class="image-box" src="./images/moose_face.jpeg">
+
+            </div>
+        </div>
+        <div class="flexbox-row information-section">
+            <div class="content">
+                <div class="card">
+                    <div class="card-image">card image here</div>
+                    <div class="card-text">card text here</div>
+                </div>
+                <div class="card">
+                    <div class="card-image">card image here</div>
+                    <div class="card-text">card text here</div>
+                </div>
+                <div class="card">
+                    <div class="card-image">card image here</div>
+                    <div class="card-text">card text here</div>
+                </div>
+                <div class="card">
+                    <div class="card-image">card image here</div>
+                    <div class="card-text">card text here</div>
                 </div>
             </div>
         </div>
-        <div class="flex-box-item intro-panel ">
-            <div class="intro-panel-text">placeholder</div>
-            <div class="intro-panel-image">placeholder</div>
+        <div class="flexbox-row quotation-section">
+            <div class="content">
+                <p>Insert some quotation here</p>
+            </div>
         </div>
-        <div class="flex-box-item information-panel ">
-            <div class="left-item">left-item</div>
-            <div class="right-item">right-item</div>
+        <div class="flexbox-row signup-section">
+            <div class="content">Sign Up</footer></div>
         </div>
-        <div class="flex-box-item quotation-panel ">
-            <div class="left-item">left-item</div>
-            <div class="right-item">right-item</div>
-        </div>
-        <div class="flex-box-item sign-up-panel ">
-            <div class="left-item">left-item</div>
-            <div class="right-item">right-item</div>
-        </div>
-        <div class="flex-box-item footer ">
-            <div class="left-item">left-item</div>
-            <div class="right-item">right-item</div>
+        <div class="flexbox-row footer">
+            <div class="content">footer</footer></div>
         </div>
     </div>
 </body>
