@@ -1,5 +1,56 @@
-.parent {
-    & .child {
+html, body {
+    background-color: rgb(129, 161, 189);
+}
 
-    }
+.card {
+    border: 3px solid purple;
+    height: 200px;
+    width: 150px;
+}
+
+.flexbox-row.header{
+    background-color: aqua;
+}
+.flexbox-row.intro-section {
+    background-color: bisque;
+}
+.flexbox-row.information-section {
+    background-color: chocolate;
+}
+.flexbox-row.quotation-section {
+    background-color: azure;
+}
+.flexbox-row.signup-section {
+    background-color: aquamarine;
+}
+.flexbox-row.footer {
+    background-color: lightsalmon;
+}
+
+
+#logo {
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    padding: 5px;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.header .content #logo {
+    /* border: 3px solid red; */
+}
+
+
+.intro-section .content .text-box,.image-box {
+    /* border: 3px solid red; */
+}
+
+.content .image-box {
+    max-width: 100%;
+    width: 200px;
+    height: 120px;
 }

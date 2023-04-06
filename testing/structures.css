@@ -32,7 +32,8 @@ Notes:
         footer will be space-between justified, and the interior
         sections will be center justified
 */
-* .content {
+
+.content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,4 +67,8 @@ Notes:
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card .image-box{
+    flex-grow: 1;
 }

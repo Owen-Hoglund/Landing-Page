@@ -1,67 +1,136 @@
 html, body {
-    background-color: rgb(129, 161, 189);
+    margin: 0;
+    height: 100%;
+    background-color: bisque;
 }
 
 .flexbox-container {
-    /* border: 3px solid yellow; */
-}
-
-.flexbox-row {
-    /* border: 3px solid red; */
+    /* structure */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+    /* style */
+    background-color: lightblue;
 }
 
 .content {
+    /* structure */
+    width: 80%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* style */
+    background-color: lightgrey;
+    /* border: 3px solid red; */
+}
+
+.content.header,.content.footer {
+    /* structure */
+    flex-grow: 0;
+}
+.header {
+    /* structure */
+    justify-content: space-between;
+    /* style */
+    background-color: #1F2937;
+}
+
+.logo {
+    /* structure */
+        /* from parent flex box */
+        height: 100%;
+        flex-grow: 1;
+        flex-basis: 0;
+
+        /* as a flex box */
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    /* style */
     /* border: 3px solid blue; */
 }
-
-.card {
-    border: 3px solid purple;
-    height: 200px;
-    width: 150px;
-}
-
-.flexbox-row.header{
-    background-color: aqua;
-}
-.flexbox-row.intro-section {
-    background-color: bisque;
-}
-.flexbox-row.information-section {
-    background-color: chocolate;
-}
-.flexbox-row.quotation-section {
-    background-color: azure;
-}
-.flexbox-row.signup-section {
-    background-color: aquamarine;
-}
-.flexbox-row.footer {
-    background-color: lightsalmon;
-}
-
-
-#logo {
+.logo img {
+    padding: 5px;
     border-radius: 50%;
     height: 50px;
-    width: auto;
-    padding: 5px;
+}
+.links {
+    /* structure */
+        /* from parent flex box */
+        height: 100%;
+        flex-grow: 1;
+        flex-basis: 0;
+
+        /* as a flex box */
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+
+    /* style */
 }
 
-ul a{
+.links a {
+    /* structure */
+    text-align: right;
+        /* from parent flex box */
+        flex-grow: 1;
+        /* as a flex box */
+    /* style */
+    font-family: "Hero Main";
+    font-size: 24px;
+    color: #E5E7EB;
     text-decoration: none;
-    color: black;
+    padding-right: 20px;
 }
 
-.header .content #logo {
-    /* border: 3px solid red; */
+.intro {
+    /* structure */
+        /* from parent flex box */
+        /* as a flex box */
+    /* style */
+    background-color: #1F2937;
+}
+
+.info {
+    /* structure */
+        /* from parent flex box */
+        /* as a flex box */
+    /* style */
+    background-color: whitesmoke;
+
+}
+
+.quote {
+    /* structure */
+        /* from parent flex box */
+        /* as a flex box */
+    /* style */
+    background-color: #E5E7EB;
+}
+
+.signup {
+    /* structure */
+        /* from parent flex box */
+        /* as a flex box */
+    /* style */
+    background-color: whitesmoke;
+    /* This is for the button background-color: #3883F6; */
+}
+
+.footer {
+    /* structure */
+        /* from parent flex box */
+        /* as a flex box */
+    /* style */
 }
 
 
-.intro-section .content .text-box,.image-box {
-    /* border: 3px solid red; */
-}
-
-.content .image-box {
-    width: 200px;
-    height: 120px;
-}
+/* structure */
+    /* from parent flex box */
+    /* as a flex box */
+/* style */
