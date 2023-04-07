@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: bisque;
+    background-color: rgb(8, 6, 102);
 }
 
 .flexbox-container {
@@ -13,16 +13,17 @@ html, body {
     height: 100%;
     
     /* style */
-    background-color: lightblue;
+    background-color: #372D1F;
 }
 
 .content {
     /* structure */
-    width: 80%;
+    width: 100%;
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     /* style */
     background-color: lightgrey;

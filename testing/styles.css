@@ -1,56 +1,78 @@
 html, body {
-    background-color: rgb(129, 161, 189);
+    margin: 0;
+    height: 100%;
 }
 
-.card {
-    border: 3px solid purple;
-    height: 200px;
-    width: 150px;
-}
+.flexbox-container {
+    /* Structure */
+    height: 100%;
+        /* As a Flex Box */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-.flexbox-row.header{
-    background-color: aqua;
-}
-.flexbox-row.intro-section {
+    /* Style */
     background-color: bisque;
-}
-.flexbox-row.information-section {
-    background-color: chocolate;
-}
-.flexbox-row.quotation-section {
-    background-color: azure;
-}
-.flexbox-row.signup-section {
-    background-color: aquamarine;
-}
-.flexbox-row.footer {
-    background-color: lightsalmon;
+    border: 3px solid red;
 }
 
+.row {
+    /* Structure */
+        /* From Parent Flex Box */
+        /* As a Flex Box */
+        display: flex;
+        justify-content: center;
+    /* Style */
+    border: 3px solid blue;
+}
 
-#logo {
+.content {
+    /* Structure */
+        /* From Parent Flex Box */
+        flex-basis: 80%;
+        /* As a Flex Box */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    /* Style */
+    border: 3px solid green;
+}
+
+.header .content {
+    /* Structure */
+        /* From Parent Flex Box */
+        /* As a Flex Box */
+        justify-content: space-between;
+    /* Style */
+}
+
+.intro {
+    /* Structure */
+        /* From Parent Flex Box */
+        flex-grow: 1;
+        /* As a Flex Box */
+    /* Style */
+    background-color: lightgrey;
+}
+
+.intro-text, .intro-image {
+    /* Structure */
+        /* From Parent Flex Box */
+        flex-basis: 40%;
+        /* As a Flex Box */
+        display: flex;
+        flex-direction: column;
+    /* Style */
+    border: 3px solid brown;
+}
+
+.logo {
     border-radius: 50%;
-    height: 50px;
-    width: auto;
-    padding: 5px;
-}
-
-ul a{
-    text-decoration: none;
-    color: black;
-}
-
-.header .content #logo {
-    /* border: 3px solid red; */
+    width: 50px;
 }
 
 
-.intro-section .content .text-box,.image-box {
-    /* border: 3px solid red; */
-}
-
-.content .image-box {
-    max-width: 100%;
-    width: 200px;
-    height: 120px;
-}
+/* Structure */
+    /* From Parent Flex Box */
+    /* As a Flex Box */
+/* Style */
