@@ -1,137 +1,205 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: rgb(8, 6, 102);
+    font-family: Roboto, 'Courier New', Courier, monospace;
 }
 
 .flexbox-container {
-    /* structure */
+    /* Structure */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    
-    /* style */
-    background-color: #372D1F;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }
 
 .content {
-    /* structure */
-    width: 100%;
-    flex-grow: 1;
+    flex-basis: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
-
-
-    /* style */
-    background-color: lightgrey;
-    /* border: 3px solid red; */
+    justify-content: center;
 }
 
-.content.header,.content.footer {
-    /* structure */
-    flex-grow: 0;
-}
-.header {
-    /* structure */
+.header .content {
     justify-content: space-between;
-    /* style */
-    background-color: #1F2937;
 }
 
-.logo {
-    /* structure */
-        /* from parent flex box */
-        height: 100%;
-        flex-grow: 1;
-        flex-basis: 0;
-
-        /* as a flex box */
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    /* style */
-    /* border: 3px solid blue; */
-}
-.logo img {
-    padding: 5px;
-    border-radius: 50%;
-    height: 50px;
-}
-.links {
-    /* structure */
-        /* from parent flex box */
-        height: 100%;
-        flex-grow: 1;
-        flex-basis: 0;
-
-        /* as a flex box */
-        display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
-
-    /* style */
-}
-
-.links a {
-    /* structure */
-    text-align: right;
-        /* from parent flex box */
-        flex-grow: 1;
-        /* as a flex box */
-    /* style */
-    font-family: "Hero Main";
-    font-size: 24px;
+.header .content .links a{
+    font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
-    padding-right: 20px;
+    margin-left: 10px;
 }
 
-.intro {
-    /* structure */
-        /* from parent flex box */
-        /* as a flex box */
-    /* style */
-    background-color: #1F2937;
+.header, .intro {
+    background-color: #1f2937;
 }
 
-.info {
-    /* structure */
-        /* from parent flex box */
-        /* as a flex box */
-    /* style */
-    background-color: whitesmoke;
-
+.intro .content {
+    /* border: 3px solid red; */
+    margin: 30px; 
 }
 
+.intro .content .text {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.intro .content .text .bold {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 1000;
+    color: #f9faf8;
+}
+.intro .content .text .subtext {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.intro .content .text button {
+    background-color: #3882f6;
+    border-radius: 3px;
+    border: none;
+    color: #E5E7EB;
+    padding: 5px 40px;
+    margin-top: 3px;
+}
+.intro .content .image {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.intro .content .image img {
+    width: 100%;
+}
+
+.information {
+    /* Structure */
+        /* From Parent Flex Box */
+        flex-grow: 1;
+        /* As a Flex Box */
+    /* Style */
+    background-color: white;
+}
+
+.information .info-header{
+    margin: 3px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f2937;
+}
 .quote {
-    /* structure */
-        /* from parent flex box */
-        /* as a flex box */
-    /* style */
+    /* Structure */
+        /* From Parent Flex Box */
+        flex-grow: 1;
+        /* As a Flex Box */
+    /* Style */
     background-color: #E5E7EB;
 }
 
 .signup {
-    /* structure */
-        /* from parent flex box */
-        /* as a flex box */
-    /* style */
-    background-color: whitesmoke;
-    /* This is for the button background-color: #3883F6; */
+    flex-grow: 1;
+}
+
+.quote .content {
+    /* Structure */
+        /* From Parent Flex Box */
+        flex-direction: column;
+        flex-grow: 1;
+        /* As a Flex Box */
+    /* Style */
+}
+.quotation, .quotation-source {
+    width: 80%;
+}
+.quotation {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    text-align: center;
+}
+
+.quotation-source {
+    text-align: right;
+    font-weight: 1000;
+}
+
+.information .content {
+    flex-direction: column;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid red; */
+}
+.card p {
+    text-align: center;
+    color: #1f2937;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.card img {
+    width: 60%;
+    border-radius: 15px;
+    border: 2px solid #3882f6;
+}
+
+.intro-text button {
+    width: 40%;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.signup .content {
+    background-color: #3882f6;
+    margin: 10px;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.content .signup-text {
+    color: white;
+}
+
+.content .signup-text .bold {
+    font-weight: 800;
+}
+
+.signup button {
+    background-color: #3882f6;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer {
-    /* structure */
-        /* from parent flex box */
-        /* as a flex box */
-    /* style */
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
 }
 
 
-/* structure */
-    /* from parent flex box */
-    /* as a flex box */
-/* style */
+
+
+/* Structure */
+    /* From Parent Flex Box */
+    /* As a Flex Box */
+/* Style */

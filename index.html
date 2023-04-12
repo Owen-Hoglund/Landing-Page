@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="flexbox-container">
-        <div class="">
-
-        </div>
-        <div class="content header">
-            <div class="logo"><img src="./images/moose_face.jpeg"></div>
-            <div class="links">
-                <a href="https://github.com/Owen-Hoglund">GitHub</a>
-                <a href="https://www.linkedin.com/in/owen-hoglund/">LinkedIn</a>
-                <a href="TODO">Contact</a>
+        <div class="row header">
+            <div class="content">
+                <img class="logo" src="/images/moose_face.jpeg">
+                <div class="links">
+                    <a href="Github">Github</a>
+                    <a href="LinkedIn">LinkedIn</a>
+                    <a href="Contact">Contact</a>
+                </div>
             </div>
         </div>
-        <div class="content intro">intro</div>
-        <div class="content info">info</div>
-        <div class="content quote">quote</div>
-        <div class="content signup">signup</div>
-        <div class="content footer">footer</div>
+        <div class="row intro">
+            <div class="content">
+                <div class="text">
+                    <p class="bold">This website is awesome</p>
+                    <p class="subtext">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+                    <button>Sign up</button>
+                </div>
+                <div class="image">
+                    <img src="./images/moose_face_wide.jpg" alt="me making a silly face">
+                </div>
+            </div>
+        </div>
+        <div class="row information">
+            <div class="content">
+                <p class="info-header">some random information</p>
+                <div class="cards">
+                <div class="card">
+                    <img src="./images/moose_face.jpeg" alt="info card text">
+                    <p class="info card text">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <img src="./images/moose_face.jpeg" alt="info card text">
+                    <p class="info card text">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <img src="./images/moose_face.jpeg" alt="info card text">
+                    <p class="info card text">this is some subtext under an illustration or image</p>
+                </div>
+                <div class="card">
+                    <img src="./images/moose_face.jpeg" alt="info card text">
+                    <p class="info card text">this is some subtext under an illustration or image</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row quote">
+            <div class="content">
+                <p class="quotation"> This is an inspiring quote, or a testimonial from a customer. Maybe its just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+                <p class="quotation-source">Thor, God of thunder</p>
+            </div>
+        </div>
+        <div class="row signup">
+            <div class="content">
+                <div class="signup-text">
+                    <p class="bold"> Call to action! It's time!</p>
+                    <p class="subtext"> Sign up for our product by clicking that button right over there!</p>
+
+                </div>
+                <button> Sign Up</div>
+            </div>
+        <div class="row footer">Copyright C The Odin Project 2021</div>
+        </div>
     </div>
 </body>
 </html>
